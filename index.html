@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgb(177, 176, 176);
+            display: inline-block;
+            width: 200px;
+            height: 260px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .card > img{
+            width: 200px;
+            height: 200px;
+        }
+        .card > h4{
+            margin: 0;
+            text-align: center;
+            padding: 6px;  
+            border-top: 1px solid black;
+        }
+        h4::before{
+            content: "x";
+            position: absolute;
+            bottom: 230px;
+            left: 10px;
+            color: gray;
+        }
+        h4::after{
+            content: "9";
+            position: absolute;
+            bottom: 230px;
+            left: 170px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+        }
+        h4 {
+            position: relative;
+            /* bottom: 80px; */
+            height: 40px;
+            border-top: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./pic/human-man-10.svg" alt="profile">
+        <h4>A.Rudiger</h4>
+    </div>
+</body>
+</html>
